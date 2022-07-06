@@ -68,11 +68,21 @@ p {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
- .accent-logo {
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.accent-logo {
   color: var(--accent-text-color);
 }
-.header-list{
+.header-list {
   display: flex;
 }
 .header-item {
@@ -83,7 +93,14 @@ p {
   margin-right: 50px;
 }
 
+.header-item:last-child {
+  margin-right: 0;
+}
+
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primery-text-color);
 }
 
@@ -97,6 +114,11 @@ p {
 }
 .header-contacts {
   display: flex;
+  margin-left: auto;
+ }
+
+.header-contacts-item {
+  margin-right: 50px;
 }
 .header-mail,
 .header-phone {
@@ -121,6 +143,10 @@ p {
 
 .hero-section {
   background-color: var(--secondary-bgc-color);
+    padding-top: 200px;
+    padding-bottom: 280px;
+    padding-left: 452px;
+    padding-right: 452px;
 }
 
 .hero-title {
@@ -133,9 +159,11 @@ p {
   color: var(--white-text-color);
 
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -145,7 +173,9 @@ p {
   background-color: var(--accent-color);
 
   cursor: pointer;
-}
+  margin-left:auto ;
+  margin-right: auto;
+  }
 
 .hero-btn:hover,
 .hero-btn:focus {
