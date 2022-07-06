@@ -66,17 +66,21 @@ p {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
-.accent-logo {
+ .accent-logo {
   color: var(--accent-text-color);
 }
-
+.header-list{
+  display: flex;
+}
 .header-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 .header-link {
@@ -91,7 +95,9 @@ p {
 .header-link:focus {
   color: var(--accent-text-color);
 }
-
+.header-contacts {
+  display: flex;
+}
 .header-mail,
 .header-phone {
   font-weight: 500;
