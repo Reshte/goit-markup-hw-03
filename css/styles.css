@@ -10,7 +10,8 @@
   --secondary-bgc-color: #2f303a;
 }
 
-html {
+/* Навешивать данное правило не нужно, так как его задает нормализатор стилей*/
+/* html {
   box-sizing: border-box;
 }
 
@@ -18,25 +19,38 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-}
+} */
 
 body {
   font-family: Roboto, sans-serif;
 }
 
 /* reset styles*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   width: 1200px;
-  outline: 5px solid red;
-  margin: 0 auto;
+  outline: 1px dashed red;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*header*/
@@ -253,8 +267,21 @@ body {
   background-color: var(--accent-color);
 }
 
+/*
+Правильне приховування елементів на сторінці
+Для усіх браузерів включаючи старі версії */
+
 .hidden-title {
-  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .portfolio-title {
