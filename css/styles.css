@@ -47,10 +47,11 @@ p {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   outline: 1px dashed red;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 /*header*/
@@ -71,8 +72,6 @@ p {
 .header-container {
   display: flex;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .header-nav {
@@ -115,7 +114,7 @@ p {
 .header-contacts {
   display: flex;
   margin-left: auto;
- }
+}
 
 .header-contacts-item {
   margin-right: 50px;
@@ -143,10 +142,8 @@ p {
 
 .hero-section {
   background-color: var(--secondary-bgc-color);
-    padding-top: 200px;
-    padding-bottom: 280px;
-    padding-left: 452px;
-    padding-right: 452px;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-title {
@@ -164,6 +161,7 @@ p {
 
 .hero-btn {
   display: block;
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -173,9 +171,13 @@ p {
   background-color: var(--accent-color);
 
   cursor: pointer;
-  margin-left:auto ;
+  margin-left: auto;
   margin-right: auto;
-  }
+  padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 
 .hero-btn:hover,
 .hero-btn:focus {
