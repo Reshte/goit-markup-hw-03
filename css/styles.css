@@ -53,12 +53,12 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  }
+}
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-   /* outline: 1px solid blue; */
+  /* outline: 1px solid blue; */
 }
 
 .section-title {
@@ -69,6 +69,12 @@ p {
 
 .header {
   background-color: var(rimery-bgc-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -79,11 +85,6 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -137,7 +138,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -160,7 +161,7 @@ p {
 }
 .hero-container {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -223,7 +224,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-right: 5px;
+  width: 270px;
 }
 
 /*Occupation section*/
@@ -231,6 +232,7 @@ p {
 .occupation-section {
   padding-top: 0;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -284,10 +286,16 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-/*footer*/
+/*Footer*/
 
 .footer {
   background-color: var(--secondary-bgc-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address {
+  margin-top: 20px;
 }
 
 .logo-footer {
@@ -306,10 +314,14 @@ p {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+}
+
+.footer-address a {
   margin-bottom: 8px;
 }
-.footer-phone {
-  margin-bottom: 0;
+
+.footer-address a:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-contacts:focus,
@@ -393,19 +405,6 @@ p {
   color: var(--secondary-text-color);
 }
 
-/*Footer*/
-
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-address {
-  margin-top: 20px;
-}
-
-/* Portfolio - page */
-
 .filter-list {
   display: flex;
   margin-bottom: 50px;
@@ -428,7 +427,7 @@ p {
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 2 * 30_) / 3);
+  flex-basis: calc((100% - 2 * 30) / 3);
 }
 
 .portfolio-img {
